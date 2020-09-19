@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<style type="text/css">
+    body{
+    margin:auto;
+    text-align:center;
+    background:#FCFCFC;
+}
+.overlay{
+    background:#009F93;
+    display:block;
+    padding:0.5em 1em;
+}
+h1{
+    color:#FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size:200%;
+    
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color:#C2F9BB;
+    font-size:150%;
+   
+}
+.form{
+    padding: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+    background:#C2F9BB;
+    color:#31393C;
+    font-weight:bold;
+    
+}
+#btn{
+    background:#009F93;
+    color:#FFFFFF;
+}
+img{
+    width:60%;
+}
+</style>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+  
+  </head>
+  <body>
+      
+        <!-- HEADING -->
+        <section class="overlay">
+            <h1 class="display-4 mt-2 mb-2 text-center">Log in</h1>
+           <p class="display-5 text-center">Log in to your account</p>
+        </section>
+        <section class="form">
+            <div class="container mt-3 mb-3">
+            <form action="/login" method="POST" >
+            <label for="email">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+    
+            <input id="email" name="email" type="email" placeholder="Email"  required>
+            <br><br>
+            <label for="password">Password:</label>
+    
+            <input id="password" name="password" type="password" placeholder="Password"  required minlength="8" maxlength="15">
+            <br><br>
+            <button id="btn" class="btn" type="submit" value="Submit">Submit</button>
+            </div>
+        </section>
+         
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </form>
+  </body>
